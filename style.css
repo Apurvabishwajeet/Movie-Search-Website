@@ -1,0 +1,144 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+body::after{
+    content: "";
+    opacity: 0.6;
+    z-index: -2;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 36px;
+    font-family: "Dancing Script", cursive;
+    background: linear-gradient(to right, rgb(190, 109, 37), rgb(245, 183, 67), rgb(243, 110, 86));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: gradient 30s linear infinite;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    display:flex;
+    align-items: center;
+    padding: 25px;
+}
+.logo{
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+}
+
+.logo i{
+    margin-right: 10px;
+}
+
+.nav {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 30px;
+    display: flex;
+    margin-left: auto;
+}
+#nav{
+    width:10px;
+}
+.nav-bar .nav:hover {
+    text-decoration: underline;
+}
+
+#para {
+    font-size: 36px;
+    margin: 20px 0;
+    font-family: fantasy;
+}
+
+#btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right, Tomato, orange, lightblue, Tomato);
+    background-size: 600% 600%;
+    border: 1px solid transparent;
+    animation: gradient 30s linear infinite;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#btn:hover {
+    background:linear-gradient
+    (to right,
+    cornflowerblue,
+    aqua,
+    deeppink
+    cornflowerblue);
+    background-size: 600% 600%;
+    animation: gradient 20s linear infinite;
+    filter:drop-shadow(0 0 30px cornflowerblue);
+    font-weight: 400;
+    text-shadow: 0 0 3px cornflowerblue;
+
+}
+
+html, body {
+    overflow: hidden;
+}
+
+@keyframes slideOutUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+body.slide-out-up {
+    animation: slideOutUp 0.5s forwards;
+}
+
+body.slide-in-up {
+    animation: slideInUp 0.5s forwards;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 600% 50%;
+    }
+}

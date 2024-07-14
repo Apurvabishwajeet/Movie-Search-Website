@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSearch</title>
+    <link rel="stylesheet" href="search.css">
+    <script src="https://kit.fontawesome.com/ec9650aca1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/movies_logo.jpg">
+</head>
+<body>
+    <div class="nav-bar">
+    <p class="logo"><i class="fa-solid fa-splotch"></i>CineSearch</p>
+    <a class="nav" href="index.html">Home</a>
+    <a class="nav" href="search.html">Search</a>
+    <a class="nav" href="feedback.html">Feedback</a>
+    </div>
+
+    <p id="intro">
+        Your ultimate destination for discovering the best movies to binge-watch.<br>Whether you're in the mood for a timeless classic, the latest blockbuster, or an indie gem,<br> CineSearch makes it easy to find exactly what you're looking for.<br>
+    </p>
+    <div class="search-div">
+        <div class="search1">
+        <input id="movie-title" type="text" placeholder="Search for movie...">
+        <button id="search-button">Search</button>
+        <br>
+        <br>
+        <input id="release-year" type="number" placeholder="Year of Release (optional)">
+        <button id="year-button">Enter</button>
+        </div>
+        <div class="filter">
+            <button id="clr-filters-btn">Clear all Filters</button>
+        </div>
+    </div>
+    <div id="recommendations" class="recommendations"></div>
+    <ul id="movie-list" class="movie-list"></ul>
+    <div class="Movie-details"></div>
+    <script src="search.js"></script>
+</body>
+</html>
